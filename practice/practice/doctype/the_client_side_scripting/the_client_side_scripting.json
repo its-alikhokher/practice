@@ -1,22 +1,35 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-03-04 11:04:25.981467",
+ "autoname": "PR-.####",
+ "creation": "2024-03-05 10:47:38.400042",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "enable",
   "first_name",
   "middle_name",
   "last_name",
   "full_name",
+  "column_break_kxhw4",
   "email",
-  "phone",
+  "mob_no",
+  "dob",
+  "age",
   "amended_from",
-  "child_doc"
+  "section_break_lwo1z",
+  "family_members",
+  "filter"
  ],
  "fields": [
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
   {
    "fieldname": "first_name",
    "fieldtype": "Data",
@@ -28,50 +41,74 @@
    "label": "Last Name"
   },
   {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
    "fieldname": "full_name",
    "fieldtype": "Data",
    "label": "Full Name"
   },
   {
-   "fieldname": "email",
-   "fieldtype": "Data",
-   "label": "Email",
-   "options": "Email"
+   "fieldname": "column_break_kxhw4",
+   "fieldtype": "Column Break"
   },
   {
-   "fieldname": "phone",
-   "fieldtype": "Phone",
-   "label": "Phone"
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "mob_no",
+   "fieldtype": "Data",
+   "label": "Mob No"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
   },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Client Side Scripting",
+   "options": "The Client Side Scripting",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
   },
   {
-   "fieldname": "child_doc",
-   "fieldtype": "Table",
-   "label": "Child doc",
-   "options": "Client side child"
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
   },
   {
-   "fieldname": "middle_name",
-   "fieldtype": "Data",
-   "label": "Middle Name"
+   "fieldname": "section_break_lwo1z",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "family_members",
+   "fieldtype": "Table",
+   "label": "Family Members",
+   "options": "Family Member"
+  },
+  {
+   "fieldname": "filter",
+   "fieldtype": "Link",
+   "label": "filter",
+   "options": "Set Query Doc"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-04 11:26:39.511273",
+ "modified": "2024-03-05 16:33:56.222995",
  "modified_by": "Administrator",
  "module": "Practice",
- "name": "Client Side Scripting",
+ "name": "The Client Side Scripting",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -89,5 +126,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

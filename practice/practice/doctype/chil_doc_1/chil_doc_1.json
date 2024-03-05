@@ -1,16 +1,30 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-03-04 11:07:08.060085",
+ "creation": "2024-03-05 17:28:06.427931",
+ "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mob_nu",
   "name1",
   "relation",
-  "age"
+  "fuck_you_boss"
  ],
  "fields": [
+  {
+   "fieldname": "mob_nu",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mob Nu"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
   {
    "fieldname": "relation",
    "fieldtype": "Data",
@@ -18,25 +32,19 @@
    "label": "Relation"
   },
   {
-   "fieldname": "age",
+   "fieldname": "fuck_you_boss",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Age"
-  },
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name"
+   "label": "Fuck you BOss"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-03-04 11:09:23.199344",
+ "modified": "2024-03-05 17:30:38.201740",
  "modified_by": "Administrator",
  "module": "Practice",
- "name": "Client side child",
+ "name": "Chil Doc 1",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",

@@ -4,5 +4,5 @@
 # import frappe
 from frappe.model.document import Document
 
-class Clientsidechild(Document):
+class MainDoc1(Document):
 	pass
